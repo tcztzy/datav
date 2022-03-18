@@ -1,0 +1,18 @@
+[project]
+name = "datav"
+version = "0.1.0"
+dependencies = [
+    "cartopy",
+    "geopandas",
+]
+classifiers = [
+    "Framework :: Matplotlib",
+    "Natural Language :: Chinese (Simplified)",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: Free For Educational Use",
+]
+
+[build-system]
+requires = ["pyproject-toml == 0.0.10"]
+build-backend = "pyproject_toml.build_system.build_backend"
