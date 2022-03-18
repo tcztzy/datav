@@ -1,16 +1,22 @@
 [project]
 name = "datav"
-version = "0.1.0"
-dependencies = [
-    "cartopy",
-    "geopandas",
-]
+version = "0.1.1"
+description = "This is an unofficial solution to draw map using Aliyun's DataV.GeoAtlas."
+readme = "README.md"
+license = { file = "LICENSE" }  # pyproject-toml should support SPDX
+requires-python = ">=3.9"
+authors = [{ name = "Tang Ziya", email = "tcztzy@gmail.com" }]
+dependencies = ["cartopy", "geopandas"]
 classifiers = [
     "Framework :: Matplotlib",
     "Natural Language :: Chinese (Simplified)",
     "Intended Audience :: Education",
     "Intended Audience :: Science/Research",
     "License :: Free For Educational Use",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
 ]
 
 [build-system]
