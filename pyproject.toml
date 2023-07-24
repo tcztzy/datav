@@ -1,9 +1,9 @@
 [project]
 name = "datav"
 version = "0.1.2"
-description = "This is an unofficial solution to draw map using Aliyun's DataV.GeoAtlas."
+description = "Data visualization tools for Python."
 readme = "README.md"
-license = { file = "LICENSE" }  # pyproject-toml should support SPDX
+license = { file = "LICENSE" }
 requires-python = ">=3.9"
 authors = [{ name = "Tang Ziya", email = "tcztzy@gmail.com" }]
 dependencies = ["cartopy", "geopandas"]
@@ -19,9 +19,12 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
 ]
 
-[tool.pyproject-toml]
-py_modules = ["datav"]
-
 [build-system]
-requires = ["pyproject-toml == 0.0.10"]
-build-backend = "pyproject_toml.build_system.build_backend"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
