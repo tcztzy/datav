@@ -39,7 +39,10 @@ dev-dependencies = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "--doctest-modules --cov"
+addopts = "--doctest-modules --cov=src"
+testpaths = [
+    "src",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
