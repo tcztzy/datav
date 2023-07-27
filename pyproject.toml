@@ -1,10 +1,10 @@
 [project]
 name = "datav"
-version = "0.1.2"
+version = "0.1.4"
 description = "Data visualization tools for Python."
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 authors = [{ name = "Tang Ziya", email = "tcztzy@gmail.com" }]
 dependencies = [
     "cartopy>=0.21.1",
