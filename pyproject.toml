@@ -1,6 +1,6 @@
 [project]
 name = "datav"
-version = "0.1.4"
+version = "0.1.5"
 description = "Data visualization tools for Python."
 readme = "README.md"
 license = { file = "LICENSE" }
