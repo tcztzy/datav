@@ -123,7 +123,8 @@ class DataVGeoAtlasFeature(Feature):
         Parameters
         ----------
         adcode
-            The address code of the dataset, i.e. either 100000 (national) or 650000 (Xinjiang).
+            The address code of the dataset, i.e. either 100000 (national) or 650000
+            (Xinjiang).
         full
             include the subregion or not, default False.
         version
