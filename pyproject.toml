@@ -6,7 +6,12 @@ readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
 authors = [{ name = "Tang Ziya", email = "tcztzy@gmail.com" }]
-dependencies = ["cartopy", "geopandas"]
+dependencies = [
+    "cartopy>=0.21.1",
+    "geopandas>=0.13.2",
+    "numba>=0.57.1",
+    "spatialpandas>=0.4.8",
+]
 classifiers = [
     "Framework :: Matplotlib",
     "Natural Language :: Chinese (Simplified)",
