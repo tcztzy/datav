@@ -4,7 +4,7 @@ version = "0.1.5"
 description = "Data visualization tools for Python."
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 authors = [{ name = "Tang Ziya", email = "tcztzy@gmail.com" }]
 dependencies = [
     "cartopy>=0.22",
@@ -17,7 +17,6 @@ classifiers = [
     "License :: Free For Educational Use",
     "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",

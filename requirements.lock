@@ -18,6 +18,8 @@ cycler==0.12.1
     # via matplotlib
 fonttools==4.50.0
     # via matplotlib
+importlib-resources==6.4.0
+    # via matplotlib
 kiwisolver==1.4.5
     # via matplotlib
 matplotlib==3.8.3
@@ -44,3 +46,5 @@ shapely==2.0.3
     # via cartopy
 six==1.16.0
     # via python-dateutil
+zipp==3.18.1
+    # via importlib-resources

@@ -18,7 +18,11 @@ coverage==7.4.4
     # via pytest-cov
 cycler==0.12.1
     # via matplotlib
+exceptiongroup==1.2.0
+    # via pytest
 fonttools==4.50.0
+    # via matplotlib
+importlib-resources==6.4.0
     # via matplotlib
 iniconfig==2.0.0
     # via pytest
@@ -55,3 +59,8 @@ shapely==2.0.3
     # via cartopy
 six==1.16.0
     # via python-dateutil
+tomli==2.0.1
+    # via coverage
+    # via pytest
+zipp==3.18.1
+    # via importlib-resources
