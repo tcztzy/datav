@@ -1,7 +1,8 @@
 import cartopy.crs
+import shapely
 from cartopy import config
 from cartopy.feature import Feature
-from cartopy.io import Downloader, shapereader
+from cartopy.io import Downloader
 
 from .downloader import DataVGeoAtlasDownloader
 
@@ -93,7 +94,7 @@ class DataVGeoAtlasFeature(Feature):
             path = datav_geoatlas(
                 adcode=self.adcode, version=self.version, full=self.full
             )
-            geometries = tuple(shapereader.Reader(path).geometries())
+            geometries = (shapely.from_geojson(path.read_text()),)
             _DATAV_GEOATLAS_GEOM_CACHE[key] = geometries
         else:
             geometries = _DATAV_GEOATLAS_GEOM_CACHE[key]
