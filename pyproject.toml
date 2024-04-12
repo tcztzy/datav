@@ -1,6 +1,6 @@
 [project]
 name = "datav"
-version = "0.1.5"
+version = "0.2.0"
 description = "Data visualization tools for Python."
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -8,6 +8,11 @@ requires-python = ">=3.9"
 authors = [{ name = "Tang Ziya", email = "tcztzy@gmail.com" }]
 dependencies = [
     "cartopy>=0.22",
+    "scikit-learn>=1.4.2",
+    "geopandas>=0.14.3",
+    "xarray>=2024.3.0",
+    "matplotlib>=3.8.4",
+    "numpy>=1.26.4",
 ]
 classifiers = [
     "Framework :: Matplotlib",
@@ -33,6 +38,8 @@ dev-dependencies = [
     "pytest>=7.4.0",
     "pytest-cov>=4.1.0",
     "ruff>=0.0.280",
+    "rpy2>=3.5.16",
+    "ipykernel>=6.29.4",
 ]
 
 [tool.pytest.ini_options]
