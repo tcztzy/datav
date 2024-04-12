@@ -1,13 +1,13 @@
-import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
-from sklearn.gaussian_process.kernels import WhiteKernel, RBF, RationalQuadratic
+import cartopy.feature as cfeature
 import geopandas as gpd
+import matplotlib.pyplot as plt
 import numpy as np
 import xarray as xr
-from matplotlib.colors import LinearSegmentedColormap
 from matplotlib import colormaps
-import cartopy.feature as cfeature
+from matplotlib.colors import LinearSegmentedColormap
 from sklearn.gaussian_process import GaussianProcessRegressor
+from sklearn.gaussian_process.kernels import RBF, RationalQuadratic, WhiteKernel
 
 
 def plot_Q(
