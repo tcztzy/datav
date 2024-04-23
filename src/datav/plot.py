@@ -82,7 +82,8 @@ def plot_Q(
 
     max_idx = da.argmax(dim="q")
 
-    colors = colormaps["tab10"](coords["q"])
+    cm = colormaps["tab10"](np.linspace(0, 1, len(coords["q"])))
+    colors = {q: cm[i] for i, q in enumerate(coords["q"])}
     for q in coords["q"]:
         cmap = LinearSegmentedColormap.from_list("cmap", ["#F5F5F5", colors[q]])
         m = (max_idx == q) & points_mask
