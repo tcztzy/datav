@@ -1,5 +1,7 @@
+from pathlib import Path
+
 import cartopy.crs
-import shapely
+import cartopy.io.shapereader as shapereader
 from cartopy import config
 from cartopy.feature import Feature
 from cartopy.io import Downloader
@@ -20,7 +22,7 @@ same projection.
 
 def datav_geoatlas(
     version: "str | int" = 3, adcode: int = 100000, full: bool = False
-):
+) -> Path:
     """
     Return the path to the requested DataV.GeoAtlas shapefile,
     downloading if necessary.
@@ -94,7 +96,7 @@ class DataVGeoAtlasFeature(Feature):
             path = datav_geoatlas(
                 adcode=self.adcode, version=self.version, full=self.full
             )
-            geometries = (shapely.from_geojson(path.read_text()),)
+            geometries = tuple(shapereader.Reader(path).geometries())
             _DATAV_GEOATLAS_GEOM_CACHE[key] = geometries
         else:
             geometries = _DATAV_GEOATLAS_GEOM_CACHE[key]
