@@ -21,9 +21,11 @@ jobs:
           create-args: >-
             python=${{ matrix.python-version }}
             cartopy
+            scikit-learn
             geopandas
-            numba
-            spatialpandas
+            xarray
+            matplotlib
+            numpy
             pytest
             pytest-cov
             ruff
