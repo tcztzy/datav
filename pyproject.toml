@@ -8,15 +8,13 @@ requires-python = ">=3.9"
 authors = [{ name = "Tang Ziya", email = "tcztzy@gmail.com" }]
 dependencies = [
     "cartopy>=0.23",
-    "scikit-learn>=1.5.2",
     "geopandas>=1.0.1",
-    "xarray>=2024.7.0",
     "matplotlib>=3.9.2",
     "numpy>=2",
+    "scikit-learn>=1.5.2",
+    "xarray>=2024.7.0",
 ]
 classifiers = [
-    "Framework :: Matplotlib",
-    "Natural Language :: Chinese (Simplified)",
     "Intended Audience :: Education",
     "Intended Audience :: Science/Research",
     "License :: Free For Educational Use",
@@ -32,9 +30,8 @@ classifiers = [
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.rye]
-managed = true
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "pytest>=7.4.0",
     "pytest-cov>=4.1.0",
     "ruff>=0.0.280",
